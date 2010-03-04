@@ -1,0 +1,145 @@
+/*
+Theme Name: Quasha site
+Theme URI: 
+Description: 
+Version: 0.1
+Author: Patrick Foringer
+Author URI: http://patrickforringer.com/
+Tags: none
+*/
+
+@import "reset.css";
+
+body{
+	background: #fff url(img/vertical_rep.png) repeat-x;
+}
+.wrapper{
+	width: 960px;
+	min-width: 960px;
+	margin: 0 auto;
+}
+
+/* @group Header Styles */
+#header{
+	background: #4f5a5a url(img/vertical_rep.png) repeat-x;
+	position: relative;
+	z-index: 20;
+	width: 100%;
+	min-width: 960px;
+
+}
+	#header div.wrapper{
+		background: url(img/header_grad.png) repeat-x 0 bottom;
+		position: relative;
+		padding-bottom: 5px;
+	}
+	
+	#header h1{
+		float: left;
+		margin-top: 15px;
+		margin-left: 10px;
+		overflow: hidden;
+		width: 459px;
+		height: 57px;
+	}
+	#header h1 a{
+		display: block;
+		width: 459px;
+		height: 57px;
+		color: #fff;
+	}
+	ul#l{
+		position: absolute;
+		right: 5px;
+		top: 15px;
+	}
+	ul#l li{
+		float: left;
+		margin-right: 10px;
+	}
+	ul#l li a{
+		color: #fff;
+		font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+		text-decoration: none;
+		border-bottom: 1px solid #50666b;
+	}
+	ul#l li a:hover{
+		border-bottom: none;
+	}
+/* @group Navigation */
+
+ul#n{
+	font-size: 1.3em;
+	line-height: 23px;
+	font-family: "Geneva", Arial, Helvetica;
+	text-transform: uppercase;
+	float: left;
+	width: 960px;
+	position: relative;
+}
+	/* general link styles */
+	ul#n a, ul#n a:visited{
+		text-decoration: none;
+		color: #c7d5d5;
+		margin-right: 10px;
+	}
+	ul#n a:hover{
+		color: #ffa854;
+	}
+	
+	ul#n li.current_page_item > a{
+		color: #df9d5b;
+	}
+	
+	/* top level */
+	ul#n > li{
+		float: left;
+		width: 100%;
+		/*margin: 5px 0 5px 10px;*/
+		margin-left: 10px;
+	}
+		ul#n > li > a{
+			float:left;
+			color: #fff;
+			margin-right: 15px;
+		}
+	
+		/* second level */
+		ul#n > li > ul{
+			display: block;
+			margin-left: 20px; /* set with js parent li width */
+		}
+		
+		ul#n > li > ul > li{
+			float: left;
+			list-style-type: disc;
+			list-style-position: inside;
+			color: #c7d5d5;
+		}
+			ul#n > li > ul > li:first-child{
+				list-style: none;
+			}
+		
+		/* third level */
+	
+	#header b{
+	clear:  both;
+	display: block;
+	width: 0;
+	height: 0;
+	}
+/* @end */
+
+
+
+/* @end */
+
+#page{
+	width: 100%;
+}
+
+#page.collapse{
+	position: absolute;
+	top: 100px; /*Set to collapsed height.*/
+	z-index: 5;
+}

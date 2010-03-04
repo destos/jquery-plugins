@@ -1,5 +1,5 @@
 /* --------------------------------------------------------------------
-// Author: Patrick Forringer ( patrick@forringer.com )
+// Author: Patrick Forringer ( destos@gmail.com )
 // File info: Fav Jquery plugin
 // Ver: 0.2
 // Last modified: never ever
