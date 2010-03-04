@@ -11,10 +11,7 @@
 				
 		return $(this).each(function(){
 		
-			$link = $(this).find('a');
-			
-			// for opera
-			$link.attr("rel","sidebar");
+			$link = $(this).find('a');			
 			
 			var defaults = {
 				url: $link.attr('href'),
@@ -30,7 +27,8 @@
 					window.sidebar.addPanel( opt.name,  opt.url, '' );
 				} else if( window.external ) { // IE Favorite
 					window.external.AddFavorite(  opt.url, opt.name );
-				} else if( window.opera ){ // Opera 
+				} else if( window.opera ){ // Opera
+					$link.attr("rel","sidebar");
 					return true;
 				} else {
 					alert("Sorry! Your browser doesn't support this function. Press ctrl+D to bookmark "+opt.name+".");
