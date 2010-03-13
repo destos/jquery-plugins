@@ -4,6 +4,7 @@
 // Ver: 0.3
 // Last modified: 030510
 // Changes made in experiement branch
+// This should generate a conflic
 //
 */
 
@@ -21,6 +22,8 @@
 			
 			test_function = function(){
 				alert('test');
+				//Added stuff here
+				console.log('test');
 			}
 			
 			console.log($links);
