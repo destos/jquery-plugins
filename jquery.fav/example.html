@@ -1,1 +1,24 @@
-Example to come soonish :o
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+	"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<title>fav example</title>
+	<script src="../ext_libs/jquery-1.4.2.min.js" type="text/javascript" ></script>
+	<script type="text/javascript" charset="utf-8" src="jquery.fav.js"></script>
+	
+	<script type="text/javascript" charset="utf-8">
+		$(document).ready(function() {
+			$('.bookmark').fav();
+			$('.bookmarks').fav();
+		});
+	</script>
+</head>
+<body id="example">
+	<a href="http://testfav.com" class="bookmark" title="Test FAV title">Bookmark us!</a>
+	<div class="bookmarks">
+		<a href="http://test.com">TEstingzz</a><br/>
+		<a href="http://secondtest.com" title="Use this">We wont use this text</a>
+	</div>
+</body>
+</html>
