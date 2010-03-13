@@ -9,16 +9,16 @@
 	
 	<script type="text/javascript" charset="utf-8">
 		$(document).ready(function() {
-			$('.bookmark').fav();
+			$('.bookmark').fav({url:'http://otherurl.com',name:'Name from options'});
 			$('.bookmarks').fav();
 		});
 	</script>
 </head>
 <body id="example">
-	<a href="http://testfav.com" class="bookmark" title="Test FAV title">Bookmark us!</a>
+	<a href="http://testfav.com" class="bookmark" title="Test FAV title">Bookmark us!</a> - single bookmarkable link
 	<div class="bookmarks">
-		<a href="http://test.com">TEstingzz</a><br/>
-		<a href="http://secondtest.com" title="Use this">We wont use this text</a>
+		<a href="http://test.com">TEstingzz</a> - get ookmark title from link Text<br/>
+		<a href="http://secondtest.com" title="Use this">We wont use this text</a> - get bookmark title from title attr. 
 	</div>
 </body>
 </html>

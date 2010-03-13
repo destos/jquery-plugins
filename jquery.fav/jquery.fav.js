@@ -1,34 +1,21 @@
 /* --------------------------------------------------------------------
-// Author: Patrick Forringer ( destos@gmail.com )
+// Author: Patrick Forringer ( patrick@forringer.com )
 // File info: Fav Jquery plugin
 // Ver: 0.3
-// Last modified: 030510
-// Changes made in experiement branch
-//
+// Url : http://github.com/destos/my-jQuery-plugins
 */
 
 (function($){
 	$.fn.fav = function(options){
-				
-		// see if we have many links
+					
 		return $(this).each(function(){
 			
-			if( $(this).has('a') ){
-				$links = $(this).find('a');
-			}else if( $(this).is('a') ){
+			// Find Links
+			if( $(this).is('a') ){
 				$links = $(this);	
+			}else if( $(this).has('a') ){
+				$links = $(this).find('a');
 			}
-			
-			test_function = function(){
-				alert('test');
-				// this should be interesting
-				google.maps.test;
-			}
-			
-			console.log($links);
-			// if( $links.length ){
-			// 				alert($links.length);
-			// 			}
 			
 			$links.each(function(){
 				
@@ -43,7 +30,6 @@
 				// allow seperate options
 				var opt = $.extend(defaults,options);
 				
-				console.log( opt.url );
 				$link.click(function(){
 			
 					if ( window.sidebar ) { // Mozilla Firefox Bookmark
@@ -58,7 +44,9 @@
 					}
 				
 					return false;
+					
 				});
+				
 			});
 		});
 		
