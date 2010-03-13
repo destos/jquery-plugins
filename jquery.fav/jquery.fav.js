@@ -21,6 +21,8 @@
 			
 			test_function = function(){
 				alert('test');
+				// this should be interesting
+				google.maps.test;
 			}
 			
 			console.log($links);
